@@ -43,7 +43,7 @@ Implemented concepts include:
 
 # ⚙️ Tech Stack
 
-## Backend
+## Backend (Different Repo)
 - FastAPI
 - PostgreSQL
 - pgvector
@@ -51,7 +51,7 @@ Implemented concepts include:
 - Sentence Transformers
 - Groq API
 
-## Frontend (Different Repo)
+## Frontend 
 - Next.js
 - React
 - Tailwind CSS
