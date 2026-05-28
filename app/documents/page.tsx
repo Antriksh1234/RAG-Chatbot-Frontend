@@ -35,7 +35,7 @@ export default function DocumentsPage() {
           <div>
 
             <h1 className="text-4xl font-bold mb-2">
-              Pandu Workspace
+              My Workspace
             </h1>
 
             <p className="text-zinc-400">

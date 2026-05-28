@@ -161,7 +161,7 @@ export default function ChatPage() {
                   <div
                     className={`max-w-2xl rounded-2xl px-5 py-4 ${
                       message.role === "user"
-                        ? "bg-zinc-200 text-black"
+                        ? "bg-blue-600 text-white"
                         : "bg-zinc-900 border border-zinc-800 text-white"
                     }`}
                   >

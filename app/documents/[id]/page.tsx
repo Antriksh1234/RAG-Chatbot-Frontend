@@ -39,7 +39,7 @@ export default function DocumentPage() {
   if (!document) {
 
     return (
-      <div className="min-h-screen bg-black text-white p-10">
+      <div className="h-full overflow-y-auto bg-black text-white p-10">
         Loading document...
       </div>
     );
@@ -60,25 +60,25 @@ export default function DocumentPage() {
         }),
       }
     );
-  
+
     const data = await response.json();
-  
+
     setDocument({
       ...document,
       title: editedTitle,
       content: editedContent,
     });
-  
+
     setIsEditing(false);
-  
+
     console.log(data);
   };
 
   return (
 
-    <div className="min-h-screen bg-black text-white p-10">
+    <div className="h-full overflow-y-auto bg-black text-white">
 
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto p-10">
 
         <div className="flex items-center justify-between mb-6 gap-4">
 
@@ -103,7 +103,7 @@ export default function DocumentPage() {
 
             <button
               onClick={() => setIsEditing(true)}
-              className="bg-white text-black px-5 py-3 rounded-2xl font-semibold hover:opacity-90 transition"
+              className="bg-blue-600 text-white px-5 py-3 rounded-2xl font-semibold hover:bg-blue-500 transition"
             >
               Edit Document
             </button>
@@ -112,7 +112,7 @@ export default function DocumentPage() {
 
         </div>
 
-        <div className="bg-zinc-900 border border-zinc-800 rounded-3xl p-8">
+        <div className="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 mb-10">
 
           {isEditing ? (
 
@@ -128,7 +128,7 @@ export default function DocumentPage() {
 
                 <button
                   onClick={saveDocument}
-                  className="bg-white text-black px-5 py-3 rounded-2xl font-semibold hover:opacity-90 transition"
+                  className="bg-blue-600 text-white px-5 py-3 rounded-2xl font-semibold hover:bg-blue-500 transition"
                 >
                   Save Changes
                 </button>

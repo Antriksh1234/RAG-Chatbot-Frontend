@@ -27,7 +27,7 @@ export default function Navbar() {
           />
 
           <h1 className="text-2xl font-bold">
-            {isChatPage ? "Pandu AI" : "Pandu Workspace"}
+            {isChatPage ? "Pandu AI" : "My Workspace"}
           </h1>
 
         </div>
